@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F11FC20C2562EADD00FCF764 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FC20B2562EADD00FCF764 /* CustomTextFieldStyle.swift */; };
+		F11FC20F2562FD1E00FCF764 /* todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FC20E2562FD1E00FCF764 /* todos.swift */; };
+		F1D4AF242561EF1500F15F2C /* TodoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D4AF232561EF1500F15F2C /* TodoSheet.swift */; };
 		F1E74A742561DFF40083BFDC /* Todo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E74A732561DFF40083BFDC /* Todo_AppApp.swift */; };
 		F1E74A762561DFF40083BFDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E74A752561DFF40083BFDC /* ContentView.swift */; };
 		F1E74A782561DFF60083BFDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E74A772561DFF60083BFDC /* Assets.xcassets */; };
 		F1E74A7B2561DFF60083BFDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E74A7A2561DFF60083BFDC /* Preview Assets.xcassets */; };
+		F1E74A852561E06D0083BFDC /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E74A842561E06D0083BFDC /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F11FC20B2562EADD00FCF764 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		F11FC20E2562FD1E00FCF764 /* todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todos.swift; sourceTree = "<group>"; };
+		F1D4AF232561EF1500F15F2C /* TodoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSheet.swift; sourceTree = "<group>"; };
 		F1E74A702561DFF40083BFDC /* Todo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E74A732561DFF40083BFDC /* Todo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_AppApp.swift; sourceTree = "<group>"; };
-		F1E74A752561DFF40083BFDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1E74A752561DFF40083BFDC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1E74A772561DFF60083BFDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E74A7A2561DFF60083BFDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1E74A7C2561DFF60083BFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E74A842561E06D0083BFDC /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				F1E74A772561DFF60083BFDC /* Assets.xcassets */,
 				F1E74A7C2561DFF60083BFDC /* Info.plist */,
 				F1E74A792561DFF60083BFDC /* Preview Content */,
+				F1E74A842561E06D0083BFDC /* Todo.swift */,
+				F1D4AF232561EF1500F15F2C /* TodoSheet.swift */,
+				F11FC20B2562EADD00FCF764 /* CustomTextFieldStyle.swift */,
+				F11FC20E2562FD1E00FCF764 /* todos.swift */,
 			);
 			path = "Todo App";
 			sourceTree = "<group>";
@@ -139,7 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E74A762561DFF40083BFDC /* ContentView.swift in Sources */,
+				F1D4AF242561EF1500F15F2C /* TodoSheet.swift in Sources */,
+				F1E74A852561E06D0083BFDC /* Todo.swift in Sources */,
+				F11FC20F2562FD1E00FCF764 /* todos.swift in Sources */,
 				F1E74A742561DFF40083BFDC /* Todo_AppApp.swift in Sources */,
+				F11FC20C2562EADD00FCF764 /* CustomTextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
