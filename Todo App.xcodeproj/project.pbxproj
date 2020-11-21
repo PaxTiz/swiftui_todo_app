@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F11FC20C2562EADD00FCF764 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FC20B2562EADD00FCF764 /* CustomTextFieldStyle.swift */; };
 		F11FC20F2562FD1E00FCF764 /* todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FC20E2562FD1E00FCF764 /* todos.swift */; };
+		F11FC2122563046600FCF764 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F11FC2112563046500FCF764 /* README.md */; };
+		F161CDE6256971A000041EF0 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F161CDE5256971A000041EF0 /* TodoItem.swift */; };
 		F1D4AF242561EF1500F15F2C /* TodoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D4AF232561EF1500F15F2C /* TodoSheet.swift */; };
 		F1E74A742561DFF40083BFDC /* Todo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E74A732561DFF40083BFDC /* Todo_AppApp.swift */; };
 		F1E74A762561DFF40083BFDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E74A752561DFF40083BFDC /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		F11FC20B2562EADD00FCF764 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		F11FC20E2562FD1E00FCF764 /* todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todos.swift; sourceTree = "<group>"; };
+		F11FC2112563046500FCF764 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F161CDE5256971A000041EF0 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		F1D4AF232561EF1500F15F2C /* TodoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSheet.swift; sourceTree = "<group>"; };
 		F1E74A702561DFF40083BFDC /* Todo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E74A732561DFF40083BFDC /* Todo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_AppApp.swift; sourceTree = "<group>"; };
@@ -41,9 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F161CDE42569717600041EF0 /* Todos */ = {
+			isa = PBXGroup;
+			children = (
+				F1E74A842561E06D0083BFDC /* Todo.swift */,
+				F1D4AF232561EF1500F15F2C /* TodoSheet.swift */,
+				F161CDE5256971A000041EF0 /* TodoItem.swift */,
+			);
+			path = Todos;
+			sourceTree = "<group>";
+		};
 		F1E74A672561DFF40083BFDC = {
 			isa = PBXGroup;
 			children = (
+				F11FC2112563046500FCF764 /* README.md */,
 				F1E74A722561DFF40083BFDC /* Todo App */,
 				F1E74A712561DFF40083BFDC /* Products */,
 			);
@@ -60,13 +75,12 @@
 		F1E74A722561DFF40083BFDC /* Todo App */ = {
 			isa = PBXGroup;
 			children = (
+				F161CDE42569717600041EF0 /* Todos */,
 				F1E74A732561DFF40083BFDC /* Todo_AppApp.swift */,
 				F1E74A752561DFF40083BFDC /* ContentView.swift */,
 				F1E74A772561DFF60083BFDC /* Assets.xcassets */,
 				F1E74A7C2561DFF60083BFDC /* Info.plist */,
 				F1E74A792561DFF60083BFDC /* Preview Content */,
-				F1E74A842561E06D0083BFDC /* Todo.swift */,
-				F1D4AF232561EF1500F15F2C /* TodoSheet.swift */,
 				F11FC20B2562EADD00FCF764 /* CustomTextFieldStyle.swift */,
 				F11FC20E2562FD1E00FCF764 /* todos.swift */,
 			);
@@ -138,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11FC2122563046600FCF764 /* README.md in Resources */,
 				F1E74A7B2561DFF60083BFDC /* Preview Assets.xcassets in Resources */,
 				F1E74A782561DFF60083BFDC /* Assets.xcassets in Resources */,
 			);
@@ -150,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F161CDE6256971A000041EF0 /* TodoItem.swift in Sources */,
 				F1E74A762561DFF40083BFDC /* ContentView.swift in Sources */,
 				F1D4AF242561EF1500F15F2C /* TodoSheet.swift in Sources */,
 				F1E74A852561E06D0083BFDC /* Todo.swift in Sources */,

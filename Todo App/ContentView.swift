@@ -9,41 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
 	
-	@State private var showSheet: Bool = false
-	@State private var showDelete: Bool = false
-	@State private var todos: [Todo] = allTodos.sorted(by: {(t1: Todo, t2: Todo) -> Bool in
-		if t1.completed && !t2.completed {
-			return false
-		}
-		return true
-	})
-	
+	@State private var showSheet: Bool = false	
+	@State private var todos: [Todo] = allTodos
+		
     var body: some View {
 		NavigationView {
 			List {
-				ForEach(todos.indices, id: \.self) { i in
-					HStack {
-						VStack(alignment: .leading) {
-							Text(todos[i].name).font(.headline)
-							Text(todos[i].content)
-								.lineLimit(1)
-						}
-						Spacer()
-						Button(action: {markAsCompleted(id: i)}) {
-							Image(systemName: todos[i].completed ? "checkmark.square.fill" : "square")
+				Section(header: Text("Pinned todos")) {
+					ForEach(todos.indices, id: \.self) { i in
+						if todos[i].pinned {
+							TodoItem(
+								id: i,
+								todo: todos[i],
+								markAsCompleted: markAsCompleted,
+								markAsPinned: markAsPinned
+							)
 						}
 					}
-					.padding(EdgeInsets(.init(top: 8, leading: 0, bottom: 8, trailing: 0)))
-					.contextMenu(menuItems: {
-						Button(action: {}) {
-							Image(systemName: "pin").background(Color.red)
-							Text("Pin")
+				}
+				
+				Section(header: Text("All todos")) {
+					ForEach(todos.indices, id: \.self) { i in
+						if !todos[i].pinned {
+							TodoItem(
+								id: i,
+								todo: todos[i],
+								markAsCompleted: markAsCompleted,
+								markAsPinned: markAsPinned
+							)
 						}
-						Button(action: {}) {
-							Image(systemName: "trash").background(Color.red)
-							Text("Delete")
-						}
-					})
+					}
 				}
 			}
 			.listStyle(InsetGroupedListStyle())
@@ -58,6 +53,10 @@ struct ContentView: View {
 	
 	func markAsCompleted(id: Int) -> Void {
 		todos[id].completed.toggle()
+	}
+	
+	func markAsPinned(id: Int) -> Void {
+		todos[id].pinned.toggle()
 	}
 	
 }

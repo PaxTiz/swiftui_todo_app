@@ -14,5 +14,6 @@ struct Todo: Hashable {
 	var content: String
 	var completed: Bool
 	var pinned: Bool
+	var deadline: Date
 	
 }
