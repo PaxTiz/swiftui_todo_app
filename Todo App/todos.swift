@@ -21,6 +21,13 @@ let allTodos: [Todo] = [
 		completed: false,
 		pinned: true,
 		deadline: Date(timeIntervalSince1970: TimeInterval(10000))
+	),
+	Todo(
+		name: "Learn more of SwiftUI",
+		content: "Make SwiftUI Great Again (what ?)",
+		completed: false,
+		pinned: false,
+		deadline: Date(timeIntervalSince1970: TimeInterval(8361))
 	)
 ].sorted(by: {(t1: Todo, t2: Todo) -> Bool in
 	if t1.completed && !t2.completed {

@@ -1,7 +1,10 @@
 #  Todo app
 
 ## Todo
--  Add screenshots
-- Manage pinned todos
 - Add todos
 - Store todos in iCloud
+- Maybe use Firebase ?
+
+## Screenshots
+
+![Screenshot of todos list](Screenshots/main.png)
